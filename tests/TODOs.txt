@@ -1,0 +1,7 @@
+link tns-core-modules & tns-platform-declarations
+dependency:
+"tslib": "~1.9.3"
+script:
+"scripts": {
+  "check-circular-deps": "node circular-check.js"
+}

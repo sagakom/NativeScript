@@ -1,31 +1,23 @@
 {
   "description": "NativeScript Application",
   "license": "SEE LICENSE IN <your-license-filename>",
-  "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
+  "readme": "NativeScript Application",
   "nativescript": {
     "id": "org.nativescript.UnitTestApp",
-    "tns-ios": {
-      "version": "5.2.0"
-    },
     "tns-android": {
-      "version": "5.2.1"
+      "version": "5.3.1"
+    },
+    "tns-ios": {
+      "version": "5.3.1"
     }
   },
   "dependencies": {
-    "tns-core-modules": "*",
-    "tslib": "^1.9.3"
+    "tns-core-modules": "~5.3.0"
   },
   "devDependencies": {
-    "babel-traverse": "6.9.0",
-    "babel-types": "6.9.0",
-    "babylon": "6.8.0",
-    "filewalker": "0.1.2",
-    "lazy": "1.0.11",
-    "tns-platform-declarations": "*",
-    "typescript": "^3.1.6"
-  },
-  "scripts": {
-    "check-circular-deps": "node circular-check.js"
+    "nativescript-dev-typescript": "~0.9.0",
+    "nativescript-dev-webpack": "~0.21.0",
+    "tns-platform-declarations": "~5.3.1"
   }
 }
