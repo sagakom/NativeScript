@@ -5,3 +5,4 @@ script:
 "scripts": {
   "check-circular-deps": "node circular-check.js"
 }
+travis-ci, xcode version
