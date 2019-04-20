@@ -1,6 +1,6 @@
 ﻿import { Page } from "tns-core-modules/ui/page";
 import * as trace from "tns-core-modules/trace";
-import * as tests from "../testRunner";
+// import * as tests from "../testRunner";
 
 let executeTests = true;
 
@@ -17,14 +17,14 @@ trace.addCategories(trace.categories.Test + "," + trace.categories.Error);
 //    trace.categories.VisualTreeEvents
 // ));
 
-function runTests() {
-    setTimeout(() => tests.runAll(""), 10);
-}
+// function runTests() {
+//     setTimeout(() => tests.runAll(""), 10);
+// }
 
-export function onNavigatedTo(args) {
-    args.object.off(Page.loadedEvent, onNavigatedTo);
-    if (executeTests) {
-        executeTests = false;
-        runTests();
-    }
-}
+// export function onNavigatedTo(args) {
+//     args.object.off(Page.loadedEvent, onNavigatedTo);
+//     if (executeTests) {
+//         executeTests = false;
+//         runTests();
+//     }
+// }

@@ -1,8 +1,7 @@
-﻿var start;
+﻿let start;
 if (typeof NSDate !== "undefined") {
     start = NSDate.date();
-}
-else {
+} else {
     start = java.lang.System.currentTimeMillis();
 }
 
@@ -32,7 +31,7 @@ application.on(application.launchEvent, function (args: application.ApplicationE
     if (args.android) {
         // For Android applications, args.android is an android.content.Intent class.
         console.log("Launched Android application with the following intent: " + args.android + ".");
-    } else if (args.ios !== undefined) {
+    } else if (args.ios) {
         // For iOS applications, args.ios is NSDictionary (launchOptions).
         console.log("Launched iOS application with options: " + args.ios);
     }
@@ -135,14 +134,12 @@ if (application.android) {
     });
 }
 
-var time;
+let time;
 if (typeof NSDate !== "undefined") {
     time = NSDate.date().timeIntervalSinceDate(start) * 1000;
-}
-else {
+} else {
     time = java.lang.System.currentTimeMillis() - start;
 }
 
 console.log(`TIME TO LOAD APP: ${time} ms`);
-
-application.run({ moduleName: "app/appRoot" });
+application.run({ moduleName: "app/app-root" });
