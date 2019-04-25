@@ -216,12 +216,12 @@ export abstract class View extends ViewBase {
     /**
      * Gets or sets the elevation of the view.
      */
-    elevation: number;
+    androidElevation: number;
 
     /**
-     * Gets or sets the pressedZ of the view.
+     * Gets or sets the dynamic elevation offset of the view.
      */
-    dynamicElevationOffset: number;
+    androidDynamicElevationOffset: number;
 
     /**
      * Gets or sets the background style property.
@@ -484,7 +484,7 @@ export abstract class View extends ViewBase {
 
     /**
      * @deprecated use on() instead
-     * 
+     *
      * @param type - Type of the gesture.
      * @param callback - A function that will be executed when gesture is received.
      * @param thisArg - An optional parameter which will be used as `this` context for callback execution.
