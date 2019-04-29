@@ -13,15 +13,11 @@
     }
   },
   "dependencies": {
-    "tns-core-modules": "*"
+    "tns-core-modules": "next"
   },
   "devDependencies": {
-    "babel-traverse": "6.10.4",
-    "babel-types": "6.11.1",
-    "babylon": "6.8.3",
-    "lazy": "1.0.11",
     "nativescript-dev-typescript": "next",
-    "tns-platform-declarations": "*",
-    "typescript": "^3.1.6"
+    "nativescript-dev-webpack": "next",
+    "tns-platform-declarations": "next"
   }
 }
