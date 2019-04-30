@@ -452,6 +452,10 @@ export class View extends ViewCommon {
             return;
         }
 
+        if (!this.viewController) {
+            return;
+        }
+
         const parentController = parent.viewController;
         const animated = (<any>this.viewController).animated;
 
